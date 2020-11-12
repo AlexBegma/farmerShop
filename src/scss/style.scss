@@ -1,5 +1,11 @@
-._container {
+@import "_header";
+@import "_fonts";
+@import "_media";
+@import "_maincontent.scss";
+
+.container {
 	// max-width: $maxwidthContainer + px;
+	max-width: 1440px;
 	margin: 0 auto;
 	padding: 0 20px;
 }

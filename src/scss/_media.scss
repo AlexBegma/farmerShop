@@ -1,0 +1,167 @@
+@media (max-width: 1024px) {
+
+}
+
+@media (min-width: 992px) {
+	.menu-page__list li:hover {
+		background-color: #1ab9ce;
+		transition: .3s all ease;
+	}
+}
+
+@media (max-width: 992px) {
+	.header__column {
+		display: flex;
+		align-items: center;
+		flex: 0 1 50%;
+		&:nth-child(2) {
+			flex: 0 0 90px;
+		}
+	}
+
+	.left {
+		.enter {
+			padding: 0 0 0 26px;
+		}
+		.registration {
+			padding: 0 0 0 26px;
+		}
+		.mailto {
+			padding: 0 0 0 26px;
+		}
+	}
+
+	.right {
+		.link__call-back {
+			padding: 0 0 0 26px;
+		}
+	}
+}
+
+@media (max-width: 850px) {
+	.header {
+		height: 170px;
+	}
+
+	.logo__link img {
+		width: 45px;
+		height: 45px;
+	}
+
+	.left {
+		.enter {
+			padding: 0;
+			background: none;
+		}
+
+		.registration {
+			padding: 0;
+			background: none;
+		}
+
+		.mailto {
+			padding: 0;
+			background: none;
+		}
+	}
+
+	.headerbottom {
+		height: 75px;
+
+		&__list {
+			.link__call-back {
+				padding: 0;
+				background: none;
+			}
+
+			.calendar {
+				padding: 0;
+				background: none;
+			}
+
+			.working-days {
+				margin-right: 6px;
+			}
+
+			.days-off {
+				margin-right: 28px;
+			}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+
+	.contacts-column.contacts-column-1,
+	.headerbottom__list.right .calendar p span {
+		display: none;
+	}
+}
+
+@media (max-width: 576px) {
+
+	.header {
+		height: 135px;
+
+		&__menu {
+			display: none;
+		}
+
+		&__content {
+			padding: 15px 0;
+		}
+
+		&__burger {
+			position: absolute;
+			display: block;
+			top: 30px;
+			left: 20px;
+			width: 30px;
+			height: 18px;
+			cursor: pointer;
+			z-index: 5;
+			span {
+				position: absolute;
+				transition: all .3s ease 0s;
+				top: calc(50% - 1px);
+				left: 0;
+				width: 100%;
+				height: 2px;
+				background-color: #fff;
+				&:first-child {
+					top: 0;
+				}
+				&:last-child {
+					top: auto;
+					bottom: 0;
+				}
+			}
+
+			&._active {
+				span {
+					transform: scale(0);
+					&:first-child {
+						transform: rotate(-45deg);
+						top: calc(50% - 1px);
+					}
+					&:last-child {
+						transform: rotate(45deg);
+						bottom: calc(50% - 1px);
+					}
+				}
+			}
+		}
+
+		&__contacts {
+			justify-content: flex-end;
+		}
+	}
+}
+
+@media (max-width: 425px) {
+
+}
+
+@media (max-width: 320px) {
+
+}

@@ -1,20 +1,197 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Farmer Shop</title>
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" type="image/x-icon" href="img/icons8-natural-food-48.png">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-	<header class="header">
-	<div class="header__content _container">
+	<div class="wrapper">
+		<header class="header">
+  <div class="container">
+    <div class="header__content">
+      <div class="header__column">
+        <div class="header__burger icon-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="header__menu menu">
+          <nav class="menunav">
+            <ul class="menunav__list">
+              <li>
+                <a class="link" href="#"><span>Бренды</span></a>
+              </li>
+              <li>
+                <a class="link" href="#"><span>Распродажа</span></a>
+              </li>
+              <li>
+                <a class="link" href="#"><span>Доставка</span></a>
+              </li>
+              <li>
+                <a class="link" href="#"><span>Гарантия</span></a>
+              </li>
+              <li>
+                <a class="link" href="#"><span>Оплата</span></a>
+              </li>
+              <li>
+                <a class="link" href="#"><span>Контакты</span></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="header__column wrapp-logo">
+        <div class="logo">
+          <a class="logo__link" href="#">
+            <img src="../img/agriculture.png" alt="#" />
+          </a>
+        </div>
+      </div>
+      <div class="header__column">
+        <div class="header__contacts">
+          <div class="contacts-column contacts-column-1">
+            <div class="contacts-item">
+              <div class="contacts-header">Кручённое</div>
+              <a href="tel:380972324299" class="contacts-phone"
+                >+38-097-23-24-299</a
+              >
+            </div>
+          </div>
+          <div class="contacts-column">
+            <div class="contacts-item">
+              <div class="contacts-header">Консультации</div>
+              <a href="tel:380972324299" class="contacts-phone"
+                >+38-097-12-34-567</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="headerbottom">
+      <div class="headerbottom__content container">
+        <div class="headerbottom__column">
+          <ul class="headerbottom__list left">
+            <li class="enter">
+              <a class="link" href="#"><span>Вход</span></a>
+            </li>
+            <li class="registration">
+              <a class="link" href="#"><span>Регистрация</span></a>
+            </li>
+            <li class="mailto">
+              <a class="link" href="mailto:farmer@gmail.com"
+                ><span>farmer@gmail.com</span></a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="headerbottom__column">
+          <ul class="headerbottom__list right">
+            <li>
+              <a class="link link__call-back" href="#">
+                <span>Обратный звонок</span></a
+              >
+            </li>
+            <!-- <li class="calendar">
+              <p>
+                <span class="working-days">Пн-Пт:</span><span>09.00-18.00</span>
+              </p>
+              <p><span class="days-off">Сб:</span><span>10.00-15.00</span></p>
+            </li> -->
+            <li class="search">
+              <form type="get" action="form.php">
+              <input type="text" name="search" id="id-search-form" placeholder="Поиск...">
+              <button>
+                <!-- <i class="button-icon"></i> -->
+                <i class="fas fa-search"></i>
+              </button>
+            </form>
+            </li>
+            <li>
+              <a class="cart" href="#"><span>20</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+		<main class="page">
+			<div class="page__container">
+	<aside class="page__side">
+		<nav class="page__menu menu-page">
+			<div class="menu-page__header">
+				<div class="menu-page__title">каталог продуктов</div>
+				<div class="menu-page__burger">
+					<div class="menu-page__lines">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				</div>
+			</div>
+			<div class="menu-page__body">
+				<ul class="menu-page__list">
+					<li><a href="#" class="menu-page__link menu-page__link_parent" data-item="0">Мясные полуфабрикаты</a></li>
+					<li><a href="#" class="menu-page__link menu-page__link_parent" data-item="1">Колбасные изделия</a></li>
+					<li><a href="#" class="menu-page__link" data-item="2">Кулинария</a></li>
+					<li><a href="#" class="menu-page__link" data-item="3">Соки натуральные</a></li>
+					<li><a href="#" class="menu-page__link" data-item="4">Хлебобулочные изделия</a></li>
+					<li><a href="#" class="menu-page__link menu-page__link_parent" data-item="5">Фрукты</a></li>
+					<li><a href="#" class="menu-page__link" data-item="6">Овощи</a></li>
+					<li><a href="#" class="menu-page__link" data-item="7">Ягоды</a></li>
+					<li><a href="#" class="menu-page__link menu-page__link_parent" data-item="8">Соления, маринады, соусы</a></li>
+				</ul>
+			</div>
+			<div class="menu-page__submenu submenu-page">
+				<div class="submenu-page__item">
+					<ul class="submenu-page__menu">
+						<li><a href="#" class="submenu-page__link">Текст № 1</a></li>
+						<li><a href="#" class="submenu-page__link">Текст № 2</a></li>
+						<li><a href="#" class="submenu-page__link">Текст № 3</a></li>
+						<li><a href="#" class="submenu-page__link">Текст № 4</a></li>
+					</ul>
+					<div class="submenu-page__product">
+						<div class="item-product">
+							<div class="item-product__labels">
+								<div class="item-product__label">Товар дня</div>
+							</div>
+							<a href="#" class="item-product__image">
+								<img src="./img/berries-3-1327450.jpg" alt="#">
+							</a>
+							<a href="#" class="item-product__title">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
+							<div class="item-product__footer">
+								<div class="item-product__old-price grn">34,50</div>
+								<div class="item-product__bottom">
+									<a href="#" class="item-product__add"></a>
+									<div class="item-product__price grn">28,00</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</aside>
+	<div class="page__content">
+
+	</div>
+</div>
+
+		</main>
 		
 	</div>
-</header>
-	<main class="main">
-		
-	</main>
+	
+	
 
 	<script src="js/script.js"></script>
 </body>
